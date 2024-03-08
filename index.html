@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!--link para iconos redes sociales-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>tp2.html</title>
+</head>
+<body>
+    <header>
+            <div>
+                <img src="./img/logo-papiro.png" alt="logo-papiro">
+            </div>
+        <nav>
+            <div>
+                <ul>
+                    <li>
+                        <a href="./pages/inicio.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo-destacado">DESTACADOS</h1>
+        <!--Carrusel destacados-->
+        <section> 
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/carpetas-colorfull.webp" class="d-block w-100" alt="imagen carpeta">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/lapices-faber-castell.webp" class="d-block w-100" alt="imagen lapiz">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/rowney-kit.webp" class="d-block w-100" alt="imagen kit rowney">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+            <!--Cards novedades-->
+        <section>      
+            <h2 class="titulo-novedades">Novedades</h2>
+            <div class="novedades">
+                <div class="card">
+                    <img src="./img/botella-termica.webp" alt="botella termica">
+                    <div class="card-text">
+                        <h2>Botella Termica</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/termo.webp" alt="termo">
+                    <div class="card-text">
+                        <h2>Termo Contigo</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/vaso-termico.webp" alt="vaso termico">
+                    <div class="card-text">
+                        <h2>Vaso Termico</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Redes sociales-->
+        <div class="redes-container">
+            <div>
+                <ul class="container-text">
+                        <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="" class="instagram"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="" class="twitter"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="" class="google"><i class="fab fa-google-plus-g"></i>Google</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+

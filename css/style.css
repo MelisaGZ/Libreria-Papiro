@@ -1,0 +1,149 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+header div img{
+    margin: 5px;
+    height: 230px;
+    width: 200px;
+}
+
+nav div ul{
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    color: rgb(20, 20, 190);
+    display: flex;
+    margin-right: 30px;
+    gap: 30px;
+}
+/*estilo h1 destacado*/
+.titulo-destacado{
+    display:flex;
+    justify-content: center;
+    margin: 35px;
+    color: rgb(20, 20, 190);
+    text-decoration:underline;
+    font-size: 65px;
+}
+
+.active img{
+    height: 500px;
+}
+
+.titulo-novedades{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 13px 5px rgba(0,0,0,1);
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.novedades{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 320px;
+    height: 450px;
+    box-shadow: 0px 0px 33px 8px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    overflow: hidden;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+}
+
+.card-text{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: overline;
+    
+}
+
+.redes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-text li{
+    list-style:none;
+}
+
+.container-text{
+    display:flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulario{
+    width: 30%;
+    height:360px ;
+    background-color: rgb(247, 213, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacto-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* cards pages productos*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    max-width: 100%; 
+    display: block; 
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Añade una línea debajo del grid */
+.image-grid:hover {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px; 
+}
+.titulo-productos{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: rgb(45, 45, 122);
+    margin: 15px;
+    text-decoration: underline;
+    font-size: 35px;
+
+}
+
