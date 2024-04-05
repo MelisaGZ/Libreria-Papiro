@@ -1,0 +1,19 @@
+@import "utilities/reset";
+@import "utilities/-global.scss";
+
+@import "components/header";
+
+//Main de mis pages
+
+@import "pages/main-index";
+@import "pages/main-nosotros";
+@import "pages/main-productos-art";
+@import "pages/main-productos-lib";
+@import "pages/main-contacto";
+
+@import "components/footer";
+
+@import "utilities/-media-quieries.scss";
+
+
+

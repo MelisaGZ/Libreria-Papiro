@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5px;
+}
+
+.color-2 {
+    background-color: #264653;
+}
+.color-g{
+    background-color: rgb(248, 246, 240);
+}
+h1{
+    color: #e76f51;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 50px;
+    }
+h2{
+    color: #219ebc;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 40px;
+}
+h3{
+    font-size: 20px;
+    color: #2a5c70;
+}
+h4{
+    background-color: #2a9d8f;
+    border-radius: 10px 0px;
+    font-size: 15px;
+    color: #f5bc2d;
+}
+h5{
+    color: rgb(41, 143, 202);
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}

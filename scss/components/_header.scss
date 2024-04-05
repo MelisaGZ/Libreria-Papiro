@@ -1,0 +1,53 @@
+header {
+    height: 200px;
+    width: 100%;
+    background-color: #264653;
+    section{
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        nav{
+            padding: 0;
+            background-color: #264653;
+            width: 100%;
+            .container-fluid {
+                align-items: flex-start;
+                a{
+                    padding-top: 0;
+                    .img-logo {
+                        height: 150px;
+                        width: 150px;
+                        border-radius: 50%;
+                        padding: 20px;
+                    }
+                }
+                button{
+                    spam{
+                        .menu-icono{
+                            background-image: url(./../../img/hamburger-list-menu.svg);
+                        }
+                        
+                    }
+                }
+                .menu{
+                    padding: 20px;
+                    flex-grow: 0;
+                        ul{
+                            font-size: 20px;
+                            gap: 10px;
+                            li{
+                                a{
+                                    color: #e9c46a;
+                                    text-decoration: none;
+                                    &:hover{
+                                        transition: background-color 02s;
+                                        background-color: antiquewhite;
+                                    }
+                                }
+                            }
+                        }
+                }
+            }
+        }
+    }
+}

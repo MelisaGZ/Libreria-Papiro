@@ -1,0 +1,17 @@
+.main-productoslib {
+    .card-libreria{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        .card {
+            box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
+            height: 500px;
+            img {
+                height: 250px;
+                overflow: hidden;
+                padding: 10px;
+            }
+        }
+    }
+}

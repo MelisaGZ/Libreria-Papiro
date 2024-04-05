@@ -1,0 +1,34 @@
+.main-nosotros{
+    .div-nosotros {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        .nosotros-h1 {
+            height: 120px;
+            color: #c9512c;
+            font-size: 40px;
+        }        
+        .nosotros-p {
+            display: flex;
+            position: relative;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 30px;
+            justify-items: center;
+            flex-direction: column;
+            p{
+                align-items: center;
+                justify-items: center;
+                width: 80%;
+                display: flex;
+                padding: 10px;
+                color: #e9c46a;
+                font-size: 30px;
+            }
+        }
+
+    }
+}

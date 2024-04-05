@@ -1,0 +1,192 @@
+/*Mi Media Queries*/
+
+/*Mi Media Queries tablet (320px-768px ) */
+@media only screen and (max-width: 768px){
+
+    .menu ul li{
+        font-size: 15px;
+    }
+    .navbar-collapse {
+        flex-basis: 0;
+    }
+
+
+        .position-fixed img {
+        width: 60px;
+    }
+
+    /* Contacto*/
+
+    .card-contacto {
+        width: 400px
+    }
+
+    .form-contacto {
+        font-size: 15px
+    }
+
+    /* MQ Artística grid*/
+    
+    .contenedor-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        img {
+            height: 250px
+        }
+    }
+
+
+
+    /* Librería*/
+    .card-libreria{
+        flex-wrap: wrap;
+    }  
+    /*Nosotros*/
+    
+    .div-nosotros p{
+        font-size: 15px;
+    }
+    h1, h2, h5{
+        font-size: 35px;
+    }
+        /*Medio de pago*/
+        footer{
+            .medios-pago {
+                font-size: 5px;
+            }
+        }
+
+}
+
+/*Mi Media Queries*/
+/* Media Queries mobile (768px-1024px)*/
+@media screen and (max-width: 320px) {  
+    /* Header*/
+    
+    .navbar{
+        flex-wrap: nowrap;
+        margin: 0;
+        height: 200px;
+        .container-fluid {
+            padding: 5px;
+            a{
+                .img-logo {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .navbar-toggler {
+                margin: 10px;
+                .menu-icono {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+        }
+    }
+
+
+
+
+    
+
+
+
+    .menu ul li{
+        font-size: 10px;
+    }
+
+    .menu ul{
+        padding: 0;
+        align-items: end;
+        font-size: 10px;
+    }
+
+    /*Nosotros*/
+    .div-nosotros p{
+        font-size: 15px;
+    }
+
+    .nosotros-h1 {
+
+        font-size: 23px;
+    }
+
+    /* Contacto*/
+    .card-destacados {
+        align-items: center;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    .card-contacto{
+
+        width: auto;
+    }  
+    
+    .form-contacto{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    /*Librería*/
+
+    .card-libreria{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.card img{
+
+    height: 350px;
+}
+
+    .card-body{
+        width: 150px;
+        height: 150px;
+        padding:0;
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card-body h4{
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-body h5{
+
+        display: flex;
+    }
+
+
+    /*Medio de pago*/
+
+    .medios-pago {
+        font-size: 5px;
+    }
+    .navbar-toggler {
+        font-size: 40px;
+        margin-top: 40px;
+        padding: 10px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    /*Artística Grid*/
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 250px);
+    }
+}
