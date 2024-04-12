@@ -74,14 +74,20 @@ header section nav .container-fluid {
 header section nav .container-fluid a {
   padding-top: 0;
 }
-header section nav .container-fluid a .img-logo {
+header section nav .container-fluid a img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
   padding: 20px;
 }
-header section nav .container-fluid button spam .menu-icono {
-  background-image: url(./../../img/hamburger-list-menu.svg);
+header section nav .container-fluid button {
+  border: none !important;
+}
+header section nav .container-fluid button:focus {
+  box-shadow: none !important;
+}
+header section nav .container-fluid button .menu-icono {
+  background-image: url "./../../img/hamburger-list-menu.svg";
 }
 header section nav .container-fluid .menu {
   padding: 20px;
@@ -94,6 +100,25 @@ header section nav .container-fluid .menu ul {
 header section nav .container-fluid .menu ul li a {
   color: #e9c46a;
   text-decoration: none;
+  background-color: #456266;
+  border-radius: 5px 0px;
+  padding: 5px;
+}
+header section nav .container-fluid .menu ul li a .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+header section nav .container-fluid .menu ul li a .navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
+header section nav .container-fluid .menu ul li a .navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+header section nav .container-fluid .menu ul li a .navbar-brand img {
+  width: 100px;
+  height: 100px;
 }
 header section nav .container-fluid .menu ul li a:hover {
   transition: background-color 2s;
@@ -147,6 +172,7 @@ header section nav .container-fluid .menu ul li a:hover {
   height: 120px;
   color: #c9512c;
   font-size: 40px;
+  padding: 5px;
 }
 .main-nosotros .div-nosotros .nosotros-p {
   display: flex;
@@ -180,10 +206,13 @@ header section nav .container-fluid .menu ul li a:hover {
 }
 .main-grid .contenedor-grid .card-1, .main-grid .contenedor-grid .card-2, .main-grid .contenedor-grid .card-3, .main-grid .contenedor-grid .card-4, .main-grid .contenedor-grid .card-5, .main-grid .contenedor-grid .card-6 {
   position: relative;
+  border-radius: 20px;
 }
 .main-grid .contenedor-grid .card-1 img, .main-grid .contenedor-grid .card-2 img, .main-grid .contenedor-grid .card-3 img, .main-grid .contenedor-grid .card-4 img, .main-grid .contenedor-grid .card-5 img, .main-grid .contenedor-grid .card-6 img {
   height: 250px;
   width: 300px;
+  border-radius: 20px;
+  box-shadow: 4px 6px 12px -1px rgb(93, 98, 99);
 }
 .main-grid .contenedor-grid .card-1 .texto-1, .main-grid .contenedor-grid .card-1 .texto-2, .main-grid .contenedor-grid .card-1 .texto-3, .main-grid .contenedor-grid .card-1 .texto-4, .main-grid .contenedor-grid .card-1 .texto-5, .main-grid .contenedor-grid .card-1 .texto-6, .main-grid .contenedor-grid .card-2 .texto-1, .main-grid .contenedor-grid .card-2 .texto-2, .main-grid .contenedor-grid .card-2 .texto-3, .main-grid .contenedor-grid .card-2 .texto-4, .main-grid .contenedor-grid .card-2 .texto-5, .main-grid .contenedor-grid .card-2 .texto-6, .main-grid .contenedor-grid .card-3 .texto-1, .main-grid .contenedor-grid .card-3 .texto-2, .main-grid .contenedor-grid .card-3 .texto-3, .main-grid .contenedor-grid .card-3 .texto-4, .main-grid .contenedor-grid .card-3 .texto-5, .main-grid .contenedor-grid .card-3 .texto-6, .main-grid .contenedor-grid .card-4 .texto-1, .main-grid .contenedor-grid .card-4 .texto-2, .main-grid .contenedor-grid .card-4 .texto-3, .main-grid .contenedor-grid .card-4 .texto-4, .main-grid .contenedor-grid .card-4 .texto-5, .main-grid .contenedor-grid .card-4 .texto-6, .main-grid .contenedor-grid .card-5 .texto-1, .main-grid .contenedor-grid .card-5 .texto-2, .main-grid .contenedor-grid .card-5 .texto-3, .main-grid .contenedor-grid .card-5 .texto-4, .main-grid .contenedor-grid .card-5 .texto-5, .main-grid .contenedor-grid .card-5 .texto-6, .main-grid .contenedor-grid .card-6 .texto-1, .main-grid .contenedor-grid .card-6 .texto-2, .main-grid .contenedor-grid .card-6 .texto-3, .main-grid .contenedor-grid .card-6 .texto-4, .main-grid .contenedor-grid .card-6 .texto-5, .main-grid .contenedor-grid .card-6 .texto-6 {
   position: absolute;
@@ -214,12 +243,15 @@ header section nav .container-fluid .menu ul li a:hover {
 }
 .main-productoslib .card-libreria .card {
   box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
-  height: 500px;
+  height: 400px;
 }
 .main-productoslib .card-libreria .card img {
-  height: 250px;
+  height: 300px;
   overflow: hidden;
   padding: 10px;
+}
+.main-productoslib .card-libreria .card img .card-body {
+  height: 100px;
 }
 
 .main-contacto {
@@ -279,145 +311,170 @@ footer .div-footer a .logo-footer {
 }
 
 /*Mi Media Queries*/
-/*Mi Media Queries tablet (320px-768px ) */
-@media only screen and (max-width: 768px) {
+/*Mi Media Queries tablet (768px-1024px ) */
+@media only screen and (min-width: 768px) {
+  .menu {
+    flex-basis: 0;
+  }
   .menu ul li {
     font-size: 15px;
   }
-  .navbar-collapse {
-    flex-basis: 0;
+  /* Main Index*/
+  .section-destacados .card-destacados {
+    align-items: center;
+    flex-direction: row;
+    font-size: 10px;
+    justify-content: space-around;
+  }
+  .section-destacados .card-destacados .div-destacados {
+    margin: 50px;
+  }
+  .section-destacados .card-destacados .div-destacados .card-texto h5 {
+    font-size: 30px;
   }
   .position-fixed img {
     width: 60px;
   }
+  h1, h2, h5 {
+    font-size: 50px;
+  }
   /* Contacto*/
-  .card-contacto {
+  .main-contacto .card-contacto {
     width: 400px;
   }
-  .form-contacto {
-    font-size: 15px;
-  }
   /* MQ Artística grid*/
-  .contenedor-grid {
+  .main-grid .contenedor-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 300px);
   }
-  .contenedor-grid img {
+  .main-grid .contenedor-grid img {
     height: 250px;
   }
   /* Librería*/
   .card-libreria {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
   /*Nosotros*/
   .div-nosotros p {
     font-size: 15px;
   }
-  h1, h2, h5 {
-    font-size: 35px;
-  }
   /*Medio de pago*/
   footer .medios-pago {
-    font-size: 5px;
+    padding: 10px;
+  }
+  footer .div-footer a {
+    margin: 0;
   }
 }
-/*Mi Media Queries*/
-/* Media Queries mobile (768px-1024px)*/
-@media screen and (max-width: 320px) {
+/* Media Queries mobile (320px-768px)*/
+@media screen and (min-width: 767px) {
   /* Header*/
-  .navbar {
+  body {
+    font-size: 20px;
+  }
+  nav {
     flex-wrap: nowrap;
     margin: 0;
     height: 200px;
   }
-  .navbar .container-fluid {
+  nav .container-fluid {
     padding: 5px;
   }
-  .navbar .container-fluid a .img-logo {
+  nav .container-fluid a {
+    font-size: 15px;
+  }
+  nav .container-fluid a .navbar-brand {
+    padding: 0;
+    margin: 0;
+  }
+  nav .container-fluid a .navbar-brand img {
     width: 100px;
     height: 100px;
   }
-  .navbar .container-fluid .navbar-toggler {
+  nav .container-fluid .navbar-toggler {
     margin: 10px;
+    padding: 0;
   }
-  .navbar .container-fluid .navbar-toggler .menu-icono {
+  nav .container-fluid .menu-icono {
     width: 50px;
     height: 50px;
   }
-  .menu ul li {
-    font-size: 10px;
-  }
-  .menu ul {
-    padding: 0;
-    align-items: end;
-    font-size: 10px;
-  }
-  /*Nosotros*/
-  .div-nosotros p {
-    font-size: 15px;
-  }
-  .nosotros-h1 {
-    font-size: 23px;
-  }
-  /* Contacto*/
-  .card-destacados {
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-  }
-  .card-contacto {
-    width: auto;
-  }
-  .form-contacto {
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-  }
-  /*Librería*/
-  .card-libreria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card img {
-    height: 350px;
-  }
-  .card-body {
-    width: 150px;
-    height: 150px;
-    padding: 0;
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .card-body h4 {
-    display: flex;
-    justify-content: center;
-  }
-  .card-body h5 {
-    display: flex;
-  }
-  /*Medio de pago*/
-  .medios-pago {
-    font-size: 5px;
-  }
-  .navbar-toggler {
-    font-size: 40px;
-    margin-top: 40px;
-    padding: 10px;
-  }
-  body {
-    font-size: 20px;
-  }
-  /*Artística Grid*/
-  .contenedor-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 250px);
-  }
+}
+.menu ul {
+  padding: 0;
+  align-items: end;
+  font-size: 10px;
+}
+.menu ul li {
+  font-size: 10px;
+}
+
+/* Main Index*/
+.card-destacados {
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+}
+
+/*Nosotros*/
+.div-nosotros p {
+  font-size: 15px;
+}
+
+/* Contacto*/
+.amin-contacto .card-contacto {
+  width: auto;
+}
+.amin-contacto .card-contacto .form-contacto {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/*Librería*/
+.card-libreria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-libreria .card img {
+  height: 350px;
+}
+.card-libreria .card .card-body {
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-libreria .card .card-body h4 {
+  display: flex;
+  justify-content: center;
+}
+.card-libreria .card .card-body h5 {
+  display: flex;
+  font-size: 30px;
+}
+
+/*Artística Grid*/
+.main-grid .contenedor-grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 250px);
+}
+
+/*Footer*/
+footer .medios-pago {
+  font-size: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
