@@ -492,10 +492,10 @@ footer .div-footer a .logo-footer {
   }
   /* Contacto*/
   .main-contacto .card-contacto {
-    width: 250px;
+    width: 300px;
   }
   .main-contacto .card-contacto .form-contacto {
-    font-size: 13px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
