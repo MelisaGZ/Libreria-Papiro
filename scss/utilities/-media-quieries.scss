@@ -1,13 +1,16 @@
 /*Mi Media Queries*/
 
-/*Mi Media Queries tablet (768px-1024px ) */
-@media only screen and (min-width: 768px){
 
+/*Mi Media Queries tablet (768px-1024px ) */
+@media only screen and (max-width: 1023px){
+    .color-g{
+        width: 100%;
+    }
     .menu {
         flex-basis: 0;
         ul {
             li{
-                font-size: 15px;
+                font-size: 20px;
             }
         }
     }
@@ -73,7 +76,7 @@
     /*Nosotros*/
     
     .div-nosotros p{
-        font-size: 15px;
+        font-size: 30px;
     }
 
     /*Medio de pago*/
@@ -88,45 +91,53 @@
         }
     }
 }
-        
-
-
-
+    
 /* Media Queries mobile (320px-768px)*/
-@media screen and (min-width: 767px) {  
+@media screen and (max-width: 767px) {  
     /* Header*/
     
     body {
         font-size: 20px;
     }
-    nav{
-        flex-wrap: nowrap;
-        margin: 0;
-        height: 200px;
-        .container-fluid {
-            padding: 5px;
-            a{
-                font-size: 15px;
-                .navbar-brand{
+    header{
+        section{
+            nav{
+                flex-wrap: nowrap;
+                margin: 0;
+                height: 200px;
+                position: relative;
+                z-index: 1000;
+                .container-fluid {
                     padding: 0;
                     margin: 0;
-                    img {
+                    a{
+                        font-size: 15px;
+                        margin-top: 0;
+                        padding: 0;
                         width: 100px;
                         height: 100px;
+                            img{
+                                width: 100px;
+                                height: 100px;
+                                margin: 0;
+                            }
                     }
-                }
-            }
-            .navbar-toggler {
-                margin: 10px;
-                padding: 0;
-                }
-                .menu-icono {
-                    width: 50px;
-                    height: 50px;
+                    
+                    button {
+                        margin: 10px;
+                        padding: 0;
+                        width: 100px;
+                        height: 100px;
+                        .navbar-toggler-icon {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
                 }
             }
         }
     }
+
     .menu ul{
         padding: 0;
         align-items: end;
@@ -141,17 +152,86 @@
         flex-direction: column;
         font-size: 10px;
     }
-
-    /*Nosotros*/
-    .div-nosotros p{
-        font-size: 15px;
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
     }
 
+    /*Nosotros*/
+    .main-nosotros{
+        .div-nosotros{
+            .nosotros-p{
+                p{
+                    font-size: 20px;
+                }        
+            }
+        }
+    }
 
+    /*Artística Grid*/
+    .main-grid{
+        margin: 20px;
+        .contenedor-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 200px);
+            gap: 10px;
+            .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
+                        img {
+                            height: 150px;
+                            width: 200px;
+                        }
+                        .texto-1, .texto-2, .texto-3, .texto-4, .texto-5, .texto-6 {
+                            width: 100%;
+                            height: 150px;
+                        }
+            }
+        }
+    }
+    /*Librería*/
+    .main-productoslib {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .card-libreria {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 15px;
+            .card {
+                height: 250px;
+                img {
+                    height: 170px;
+                    width: 100%; 
+                    justify-content: center;
+                    padding: 10px;
+                }
+                .card-body {
+                    height: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0; 
+                    h4{
+                        margin: 0;
+                    }
+                    h5{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+        
+
+        
     /* Contacto*/
-    .amin-contacto{
+    .main-contacto{
         .card-contacto{
-            width: auto;
+            width: 250px;
             .form-contacto{
                 font-size: 13px;
                 display: flex;
@@ -163,45 +243,9 @@
         
     }
 
-    /*Librería*/
 
-    .card-libreria{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .card{
-            img{
-                height: 350px;
-            }
-            .card-body{
-                width: 150px;
-                height: 150px;
-                padding:0;
-                display: contents;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                h4{
-                    display: flex;
-                    justify-content: center;
-                }
-                h5{
-                    display: flex;
-                    font-size: 30px;
-                }
-            }
-        
-        }
-}
 
-    /*Artística Grid*/
-    .main-grid{
-        .contenedor-grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 250px);
-        }   
-    }
+
 
     
     /*Footer*/
@@ -209,6 +253,16 @@
         .medios-pago {
             font-size: 5px;
         }
+        .div-footer {
+            padding: 10px;
+            gap: 0;
+        }
     }
+}
+
+
+
+
+
 
 
