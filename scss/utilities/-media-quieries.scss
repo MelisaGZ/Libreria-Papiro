@@ -10,7 +10,7 @@
         flex-basis: 0;
         ul {
             li{
-                font-size: 20px;
+                font-size: $m-1;
             }
         }
     }
@@ -97,7 +97,7 @@
     /* Header*/
     
     body {
-        font-size: 20px;
+        font-size: $m-1;
     }
     header{
         section{
@@ -164,7 +164,7 @@
         .div-nosotros{
             .nosotros-p{
                 p{
-                    font-size: 20px;
+                    font-size: $m-1;
                 }        
             }
         }
@@ -172,12 +172,13 @@
 
     /*Artística Grid*/
     .main-grid{
-        margin: 20px;
+        margin: $m-1;
         .contenedor-grid {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 200px);
             gap: 10px;
+            justify-items: center;
             .card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
                         img {
                             height: 150px;
@@ -198,12 +199,13 @@
             .card-libreria {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: $m-1;
             padding: 15px;
+            margin: 0 10px;
             .card {
-                height: 250px;
+                height: auto;
                 img {
-                    height: 170px;
+                    height: 250px;
                     width: 100%; 
                     justify-content: center;
                     padding: 10px;
@@ -217,25 +219,27 @@
                     padding: 0; 
                     h4{
                         margin: 0;
+                        font-size: 15px;
                     }
                     h5{
                         margin: 0;
+                        font-size: $m-1;
                     }
-                }
             }
         }
     }
-        
+}      
 
         
     /* Contacto*/
     .main-contacto {
+        flex-direction: column;
         .card-contacto {
-            width: 100%; 
+            width: auto;
             margin: 20px; 
-            font-size: 16px; 
+            font-size: 10px; 
             padding: 10px; 
-            margin-top: 20px;
+            margin-top: $m-1;
         }
     }
 
@@ -253,6 +257,9 @@
             padding: 10px;
             gap: 0;
         }
+    }
+    .copyright{
+        font-size: 8px;
     }
 }
 

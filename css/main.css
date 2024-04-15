@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.main-productoslib .card-libreria .card img {
+  padding: 15px;
+  overflow: hidden;
+}
+
 /*Reset*/
 * {
   margin: 0;
@@ -86,9 +91,6 @@ header section nav .container-fluid button {
 header section nav .container-fluid button:focus {
   box-shadow: none !important;
 }
-header section nav .container-fluid button .menu-icono {
-  background-image: url "./../../img/hamburger-list-menu.svg";
-}
 header section nav .container-fluid .menu {
   padding: 20px;
   flex-grow: 0;
@@ -127,23 +129,22 @@ header section nav .container-fluid .menu ul li a:hover {
 
 .main-index .section-destacados .card-destacados {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   row-gap: 20px;
 }
 .main-index .section-destacados .card-destacados .div-destacados {
   width: 300px;
-  height: 380px;
-  box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
-  padding: 20px;
-  overflow: hidden;
+  height: 400px;
   border-radius: 25px;
-  display: flex;
-  flex-direction: column;
+  box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
 }
 .main-index .section-destacados .card-destacados .div-destacados:hover {
   transition: background-color 1s;
   background-color: rgb(225, 252, 253);
+  transform: scale(1.2);
 }
 .main-index .section-destacados .card-destacados .div-destacados img {
   width: 100%;
@@ -151,13 +152,11 @@ header section nav .container-fluid .menu ul li a:hover {
 }
 .main-index .section-destacados .card-destacados .div-destacados .card-texto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: center;
-  padding: 15px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   font-size: 20px;
-  height: 140px;
 }
 
 .main-nosotros .div-nosotros {
@@ -168,26 +167,17 @@ header section nav .container-fluid .menu ul li a:hover {
   padding: 20px;
   width: 100%;
 }
-.main-nosotros .div-nosotros .nosotros-h1 {
-  height: 120px;
-  color: #c9512c;
-  font-size: 40px;
-  padding: 5px;
-}
-.main-nosotros .div-nosotros .nosotros-p {
+.main-nosotros .nosotros-p {
   display: flex;
-  position: relative;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
   padding-left: 15px;
   padding-right: 30px;
-  justify-items: center;
-  flex-direction: column;
 }
-.main-nosotros .div-nosotros .nosotros-p p {
-  align-items: center;
-  justify-items: center;
+.main-nosotros .nosotros-p p {
   width: 80%;
-  display: flex;
   padding: 10px;
   color: #e9c46a;
   font-size: 30px;
@@ -201,16 +191,14 @@ header section nav .container-fluid .menu ul li a:hover {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 300px);
   gap: 10px;
-  justify-items: center;
-  align-items: center;
 }
 .main-grid .contenedor-grid .card-1, .main-grid .contenedor-grid .card-2, .main-grid .contenedor-grid .card-3, .main-grid .contenedor-grid .card-4, .main-grid .contenedor-grid .card-5, .main-grid .contenedor-grid .card-6 {
   position: relative;
   border-radius: 20px;
 }
 .main-grid .contenedor-grid .card-1 img, .main-grid .contenedor-grid .card-2 img, .main-grid .contenedor-grid .card-3 img, .main-grid .contenedor-grid .card-4 img, .main-grid .contenedor-grid .card-5 img, .main-grid .contenedor-grid .card-6 img {
-  height: 250px;
   width: 300px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 4px 6px 12px -1px rgb(93, 98, 99);
 }
@@ -218,13 +206,14 @@ header section nav .container-fluid .menu ul li a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 300px;
   height: 250px;
+  border-radius: 5px;
   background: linear-gradient(to right, rgba(240, 235, 235, 0.945), rgba(255, 255, 255, 0.432));
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
   opacity: 0;
   transition: opacity 2s;
@@ -237,7 +226,9 @@ header section nav .container-fluid .menu ul li a:hover {
 
 .main-productoslib .card-libreria {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   gap: 20px;
   padding: 15px;
 }
@@ -245,31 +236,44 @@ header section nav .container-fluid .menu ul li a:hover {
   box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
   height: 400px;
 }
-.main-productoslib .card-libreria .card img {
-  height: 300px;
-  overflow: hidden;
-  padding: 10px;
+.main-productoslib .card-libreria .card:hover {
+  transform: scale(1.1);
 }
-.main-productoslib .card-libreria .card img .card-body {
-  height: 100px;
+.main-productoslib .card-libreria .card img {
+  width: auto;
+  height: 250px;
+  border-radius: 0;
+}
+.main-productoslib .card-libreria .card .card-body, .main-productoslib .card-libreria .card .main-index .section-destacados .card-destacados .div-destacados .card-texto, .main-index .section-destacados .card-destacados .div-destacados .main-productoslib .card-libreria .card .card-texto {
+  height: 150px;
+  padding: 10px;
 }
 
 .main-contacto {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .main-contacto .card-contacto {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   margin: 20px;
-  align-items: center;
   background-color: #d3c091;
   font-size: 20px;
   padding: 15px;
-  box-shadow: 13px 9px 30px -4px rgb(49, 48, 44);
+  box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
   border-radius: 15px;
   margin-top: 30px;
+}
+.main-contacto .card-contacto .form-contacto {
+  width: auto;
+  box-sizing: border-box;
+}
+.main-contacto .mapa {
+  margin: 0, 20px;
 }
 
 .submit {
@@ -287,8 +291,9 @@ footer .medios-pago img {
 }
 footer .div-footer {
   display: flex;
-  padding: 20px;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
   gap: 30px;
 }
 footer .div-footer a {
@@ -299,6 +304,13 @@ footer .div-footer a {
 footer .div-footer a .logo-footer {
   width: 40px;
   height: 40px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
 }
 
 .position-fixed {
@@ -446,6 +458,7 @@ footer .div-footer a .logo-footer {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 200px);
     gap: 10px;
+    justify-items: center;
   }
   .main-grid .contenedor-grid .card-1 img, .main-grid .contenedor-grid .card-2 img, .main-grid .contenedor-grid .card-3 img, .main-grid .contenedor-grid .card-4 img, .main-grid .contenedor-grid .card-5 img, .main-grid .contenedor-grid .card-6 img {
     height: 150px;
@@ -466,17 +479,18 @@ footer .div-footer a .logo-footer {
     flex-direction: column;
     gap: 20px;
     padding: 15px;
+    margin: 0 10px;
   }
   .main-productoslib .card-libreria .card {
-    height: 250px;
+    height: auto;
   }
   .main-productoslib .card-libreria .card img {
-    height: 170px;
+    height: 250px;
     width: 100%;
     justify-content: center;
     padding: 10px;
   }
-  .main-productoslib .card-libreria .card .card-body {
+  .main-productoslib .card-libreria .card .card-body, .main-productoslib .card-libreria .card .main-index .section-destacados .card-destacados .div-destacados .card-texto, .main-index .section-destacados .card-destacados .div-destacados .main-productoslib .card-libreria .card .card-texto {
     height: 80px;
     display: flex;
     justify-content: center;
@@ -484,17 +498,22 @@ footer .div-footer a .logo-footer {
     flex-direction: column;
     padding: 0;
   }
-  .main-productoslib .card-libreria .card .card-body h4 {
+  .main-productoslib .card-libreria .card .card-body h4, .main-productoslib .card-libreria .card .main-index .section-destacados .card-destacados .div-destacados .card-texto h4, .main-index .section-destacados .card-destacados .div-destacados .main-productoslib .card-libreria .card .card-texto h4 {
     margin: 0;
+    font-size: 15px;
   }
-  .main-productoslib .card-libreria .card .card-body h5 {
+  .main-productoslib .card-libreria .card .card-body h5, .main-productoslib .card-libreria .card .main-index .section-destacados .card-destacados .div-destacados .card-texto h5, .main-index .section-destacados .card-destacados .div-destacados .main-productoslib .card-libreria .card .card-texto h5 {
     margin: 0;
+    font-size: 20px;
   }
   /* Contacto*/
+  .main-contacto {
+    flex-direction: column;
+  }
   .main-contacto .card-contacto {
-    width: 100%;
+    width: auto;
     margin: 20px;
-    font-size: 16px;
+    font-size: 10px;
     padding: 10px;
     margin-top: 20px;
   }
@@ -505,6 +524,9 @@ footer .div-footer a .logo-footer {
   footer .div-footer {
     padding: 10px;
     gap: 0;
+  }
+  .copyright {
+    font-size: 8px;
   }
 }
 

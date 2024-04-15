@@ -1,21 +1,23 @@
 .main-productoslib {
     .card-libreria{
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+        @include flex(space-around, center, row);
+        gap: $m-1;
         padding: 15px;
         .card {
-            box-shadow: 13px 9px 30px -4px rgba(0, 0, 0, 0.75);
+            box-shadow: $shading;
             height: 400px;
+            &:hover{
+                transform: scale(1.1);
+            }            
             img {
-                height: 300px;
-                overflow: hidden;
-                padding: 10px; 
-                .card-body{
-                    height: 100px;
-                }
-            
+                @include estilos-tarj(auto, 250px, 0);
+                @extend %estilos;
             }
+            .card-body{
+                    height: 150px;
+                    padding: 10px;
+            }
+            
         }
     }
 }

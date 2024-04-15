@@ -1,18 +1,21 @@
 .main-contacto {
-    display: flex;
-    justify-content: center;
+    @include flex(center, center, row);
     .card-contacto {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 20px;
-        align-items: center;
+        @include flex(center, center, column);
+        margin: $m-1;
         background-color: #d3c091;
-        font-size: 20px;
+        font-size: $m-1;
         padding: 15px;
-        box-shadow: 13px 9px 30px -4px rgb(49, 48, 44);
+        box-shadow: $shading;
         border-radius: 15px;
         margin-top: 30px;
+        .form-contacto{
+            width: auto;
+            box-sizing: border-box;
+        }
+    }
+    .mapa{
+        margin: 0, $m-1;
     }
 }
 .submit {
